@@ -1,0 +1,552 @@
+
+/*- - - - - Configuraciòn general - - - - - - */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /*para quitar los espacios blancos del contorno */
+    padding: 0; /*para quitar los espacios blancos del contorno */
+}
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
+    font-weight: 1000;
+    font-size: 3.5rem;
+    color: #1f3e72;
+    margin-right: 6rem;
+}
+
+p {
+    font-size: 18px;
+    color: #6d7b91;
+    font-weight: 600;
+    line-height: 33px;
+}
+  
+h2 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 34px;
+    font-size: 32px;
+    color: #1f3e72;
+    font-weight: 600;
+}
+  
+h3 {
+    color: #1f3e72;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*Estilo de la lista de navegación*/
+li {
+    list-style: none;
+    margin-right: 25px;
+    margin-left: 45px;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background: linear-gradient(90deg,rgba(252, 252, 252, 0), 49.9%,rgba(221, 235, 250,.9) 52%);
+    height: 90px;  
+    padding: 30px 0 0 0 ;
+}
+
+
+
+.contenedor { /*para que no se pegue el menu a los extremos*/
+    max-width: 1280px; /*medida estandar del monitor*/
+    width: 100%; /*para que los elementos esten mas compactados*/
+    margin: 0 auto; /*para que los elementos esten centrados (sino el contenido se va hacia la izquierda)*/
+    padding: 0;
+}
+
+.icon {
+    display: inline-block;
+    padding: 7px;
+    background-color: #eef3ff;
+    border-radius: 5px;
+    color: #164DBC;
+}
+
+ .button {
+    display: inline-block;
+    padding: 15px 28px;
+    background-color:#164DBC;
+    font-weight: 500;
+    text-align: center;
+    color: #eef3ff;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 1px 17px 20px -8px rgba(24,54,140,0.33);
+    border: none;
+  
+    transition: color 0.3s;
+}
+  
+.button:hover {
+    color: #5a82d3;
+    transition: 0.3s;
+}
+
+/* //////////////////////////////////////////////////
+                CLASES usadas en Header
+ //////////////////////////////////////////////////*/
+
+.menu_nav {
+    display: flex; /*me va a permitir colocar los elementos uno adelante del otro*/
+    justify-content: space-between; /*crea un espacio en medio*/
+    align-items: center; /*alinea los elementos*/
+}
+
+.title-nav {
+    font-family: 'Inter', sans-serif;
+    margin-left: 4rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #4360e0;
+}
+
+.lista-nav { /*lista del menu de arriba*/
+    display: flex;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-right: 4.5rem;
+}
+
+.nav-link {
+    color: #707e96;
+    transition: color ease 0.3s;
+}
+
+.nav-link:hover {
+    color: #5a82d3;
+    transition: 0.3s;/*Para suavizar el efecto anterior*/
+    transform: scale(1.1);/*para que el boton se agrande, por si solo no pasa nada porque el boton es un elemento en linea. entonces poner display: inline block*/
+    display: inline-block;
+}
+
+/* //////////////////////////////////////////////////
+                CLASES usadas en Section 1
+ //////////////////////////////////////////////////*/
+
+ .contenedor-FigthtVirus {
+    display: flex;
+    justify-content: space-around; /*para separarlos*/
+    margin-top: 2px;
+}
+
+ .FigthtVirus-column1 {
+    padding: 2rem 0rem 0rem 6rem;
+    /*padding-top: 2%;*/
+    width: 40%;
+    margin-right: 3%;
+}
+
+.text-FigthtVirus {
+    margin-bottom: 3rem;
+    padding-right: 6rem;
+}
+
+.FigthtVirus-icons {
+    display: flex;
+    margin-bottom: 95px;
+    justify-content:left;
+}
+
+.FigthtVirus-icon {
+    font-family: 'Poppins', sans-serif;
+    color: #1f3e80;
+    font-weight: 600;
+}
+
+.FigthtVirus-icon i {
+    margin-right: 12px;
+    border-radius: 5px;
+    padding: .5rem;
+    background-color: #fffcef;
+    color: #ffd428;
+}
+
+.shedule-vaccinations {
+    font-size: 17px;
+    font-weight: 700;
+    color: #1f3e90;
+}
+
+.shedule-vaccinations i {
+    margin-right: 12px;
+    box-shadow: 1px 10px 29px -1px rgba(92, 176, 185, 0.23);
+    background-color:#e9f1fe;
+    color: #2c4cca;
+}
+
+/* Clases para el formulario*/
+.form {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    padding: 20px 35px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 5px;
+    box-shadow: 1px 22px 30px -2px rgba(89, 119, 218, 0.23);
+    margin-right: 30px;
+}
+
+.form p{
+    font-size: 18px;
+    margin-bottom: 5.5px;
+}
+
+.form i {
+    margin-right: 8px;
+    font-size: 14px;
+}
+
+.form select, input {
+    margin-left: 37px;
+    font-size: 19px;
+    font-weight: 700;
+    background: transparent;
+    color: #1f3e72;
+    border: none;
+}
+
+.form button{
+    padding: 10px 45px;
+    margin-left: 55px;
+}
+
+/* --------------------------------------- */
+.FigthtVirus-column2 {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(90deg,rgba(77, 156, 230, 0.94), rgba(38, 24, 236, 0.9)); 
+}
+
+.FigthtVirus-column2 img {
+    width: 60%;
+    padding-top: 10%;
+    margin-left: 25%;
+    height:100%;
+}
+
+/* //////////////////////////////////////////////////
+                CLASES usadas en Section 2
+ //////////////////////////////////////////////////*/
+
+.contenedor-vaccines {
+    display: flex;
+    align-items: center;
+    padding: 4rem 0 1rem 0;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+.contenedor-vaccines img {
+    width: 15%;
+    height: 10%;
+    margin: 0 auto;
+    filter: contrast(1.5%) brightness(180%);
+}
+
+/* //////////////////////////////////////////////////
+                CLASES usadas en Section 3
+ //////////////////////////////////////////////////*/
+
+.why-vaccinate {
+    margin-top: 80px;
+    margin-left: 4rem;
+}
+
+.why-vaccinate p{
+    padding-right: 55%;
+}
+
+.contenedor-why-vaccinate {
+    display: flex;
+    flex-wrap: wrap; /*separa por filas detectadas y las acomoda en columnas que alcancen.*/
+    justify-content: space-between; /*separar los cuadros*/
+    margin: 5% 6% 6% 0;
+}
+
+.razon {
+    width: 19%; 
+    padding: 15px 25px 30px;
+    border-radius: 10px; /*border redondeado*/
+    margin-bottom: 40px; /*para separar de los cuadros de abajo*/
+    border: 2px solid #eef3ff;
+    transition: box-shadow 0.3s ease;
+}
+
+.razon:hover {
+    box-shadow: 0 25px 20px  rgba(89, 119, 218, 0.23);
+}
+
+.razon h3 {
+    width: 90%;
+    margin-bottom: 17px;
+}
+
+.razon p {
+    font-size: 13px;
+    padding-right: 0;
+    line-height: 1.5rem;
+}
+
+.razon i {
+    margin-bottom: 23px;
+    padding: 15px;
+    font-size: 23px;
+    border-radius: 6px;
+}
+
+.razon:hover i{
+    box-shadow: 0 20px 20px rgba(89, 119, 218, 0.23);
+}
+
+/* //////////////////////////////////////////////////
+                CLASES usadas en Section 4
+ //////////////////////////////////////////////////*/
+
+.contenedor-preparations {
+    display: flex;
+    margin: 5rem 4rem 4rem 4rem;
+}
+
+.columna1-preparations {
+    width: 46%;
+    height: 100%;
+}
+
+.columna1-preparations img {
+    width: 100%;
+    padding-top: 28%;
+    height:100%;
+}
+/*------------------------*/
+.columna2-preparations {
+    width: 54%;
+    height: 100%;
+    justify-items: center;
+    margin-left: 5%;
+}
+
+.text-preparations{
+    width: 83%;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.contenedor-list-preparations {
+    margin-right: 18%;
+}
+
+.item-preparations {
+    width: 90%;
+    max-width: 500px;
+    margin: 1rem 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.item-preparations:hover {
+    box-shadow: 1px 21px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.title-preparation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-preparation h4 {
+    font-weight: 700;
+    color: #1f3e72;
+    font-size: 15px;
+}
+
+.title-preparation i{
+    margin: 0 1rem;
+}
+.content-preparation {
+    position: relative;
+    height: 0;
+    padding-left: 50px;
+    overflow: hidden;
+}
+
+.item-preparations.active {
+    box-shadow: 1px 17px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.content-preparation p{
+    font-size: 12px;
+    line-height: 1.5rem;
+    margin-right: 47px;
+}
+
+/* //////////////////////////////////////////////////
+                CLASES usadas en Section 5
+ //////////////////////////////////////////////////*/
+
+.contenedor-contact {
+    display: flex;
+    margin: 6rem 0 4rem 10rem;
+}
+
+.columna1-contact{
+    width: 46%;
+    height: 100%;
+    justify-items: center;
+    margin-left: 5%;
+}
+
+.columna1-contact p {
+    width: 100%;
+    margin-bottom: 40px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* contacts */
+.contenedor-box-contacts {
+    display: flex;
+    flex-wrap: wrap; /*separa por filas detectadas y las acomoda en columnas que alcancen.*/
+    justify-content: space-between; /*separar los cuadros*/
+    margin: 20% 3% 5% 0 ;
+}
+
+.item-contact {
+    width: 36%; /*para que quepan los 3 por fila. (antes tenia 29%)*/
+    padding: 15px 25px 10px;
+    border-radius: 10px; /*border redondeado*/
+    margin-bottom: 10px; /*para separar de los cuadros de abajo*/
+    border: 2px solid #eef3ff;
+    transition: box-shadow 0.3s ease;
+}
+
+.item-contact .button {
+    width: 80%;
+    font-size: 16.5px;
+    font-weight: 600;
+    background-color: #eef3ff;
+    color: #164DBC;
+    box-shadow: none;
+}
+
+.item-contact .button:hover {
+    background-color: #164DBC;
+    color: #FFF;
+    box-shadow: 1px 17px 20px -8px rgba(23,54,140,0.33);
+}
+
+.contact-group{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-group i {
+    margin-right: 20px;
+    padding: 13px;
+    font-size: 22px;
+}
+
+.contact-group i:hover {
+    box-shadow: 1px 21px 29px -1px rgba(92, 176, 185, 0.23);
+}
+
+.contact-group span {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    color: #6d7b91;
+}
+
+/*------------------------*/
+.columna2-contact {
+    width: 54%;
+    height: 100%;
+    justify-items: center;
+    margin-left: 5%;
+}
+
+.columna2-contact img {
+    width: 100%;
+    padding-top: 28%;
+    height:100%;
+}
+
+/* //////////////////////////////////////////////////
+                CLASES usadas en Footer
+ //////////////////////////////////////////////////*/
+
+.contenedor-footer {
+    padding-top: 5%;
+    width: 100%;
+    background: #eef3ff;
+}
+
+.columns-footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 8%;
+}
+
+.column1-footer p{
+    font-size: 14px;
+    line-height: 2rem;
+    padding-right: 62%;
+    font-weight: 500;
+}
+
+.column1-footer {
+    width: 50%;
+}
+
+.titular-footer {
+    font-size: 25px;
+    font-weight: 800;
+    color: #164DBC;
+    cursor: pointer;
+}
+
+.column-footer {
+    width: 20%;
+}
+
+.footer-links a{
+    color: #6d7b91;
+    font-size: 13px;
+}
+
+.footer-links h4{
+    font-weight: 800;
+    color: #1f3e72;
+}
+
+.footer-links li {
+    margin-bottom: 1rem;
+}
+
+.credits-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    margin: 2rem 6rem 0 6.5rem;
+}
+
+.credits-footer a {
+    margin-left: 4rem;
+    font-weight: 600;
+    color: #6d7b93;
+}
+
+.credits-footer p {
+    font-size: 12px;
+}
